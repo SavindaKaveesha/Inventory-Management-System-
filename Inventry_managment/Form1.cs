@@ -9,7 +9,23 @@ namespace Inventry_managment
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //hello world 
+
+        }
+
+        private void pwTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                pwTxt.UseSystemPasswordChar = false;
+            }
+            else {
+                pwTxt.UseSystemPasswordChar=true;
+            }
         }
     }
 }

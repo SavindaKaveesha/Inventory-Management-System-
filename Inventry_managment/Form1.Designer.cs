@@ -30,8 +30,8 @@
         {
             panel1 = new Panel();
             checkBox1 = new CheckBox();
-            button2 = new Button();
-            button1 = new Button();
+            clearBtn = new Button();
+            loginBtn = new Button();
             pwTxt = new TextBox();
             nameTxt = new TextBox();
             label2 = new Label();
@@ -43,8 +43,8 @@
             // 
             panel1.BackColor = SystemColors.ControlDark;
             panel1.Controls.Add(checkBox1);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(clearBtn);
+            panel1.Controls.Add(loginBtn);
             panel1.Controls.Add(pwTxt);
             panel1.Controls.Add(nameTxt);
             panel1.Controls.Add(label2);
@@ -64,23 +64,25 @@
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
-            // button2
+            // clearBtn
             // 
-            button2.Location = new Point(108, 295);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 4;
-            button2.Text = "Clear";
-            button2.UseVisualStyleBackColor = true;
+            clearBtn.Location = new Point(108, 295);
+            clearBtn.Name = "clearBtn";
+            clearBtn.Size = new Size(94, 29);
+            clearBtn.TabIndex = 4;
+            clearBtn.Text = "Clear";
+            clearBtn.UseVisualStyleBackColor = true;
+            clearBtn.Click += clearBtn_Click;
             // 
-            // button1
+            // loginBtn
             // 
-            button1.Location = new Point(108, 251);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 3;
-            button1.Text = "Login";
-            button1.UseVisualStyleBackColor = true;
+            loginBtn.Location = new Point(108, 251);
+            loginBtn.Name = "loginBtn";
+            loginBtn.Size = new Size(94, 29);
+            loginBtn.TabIndex = 3;
+            loginBtn.Text = "Login";
+            loginBtn.UseVisualStyleBackColor = true;
+            loginBtn.Click += loginBtn_Click;
             // 
             // pwTxt
             // 
@@ -99,7 +101,6 @@
             nameTxt.Name = "nameTxt";
             nameTxt.Size = new Size(240, 30);
             nameTxt.TabIndex = 1;
-            nameTxt.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -144,8 +145,8 @@
         private Label label2;
         private TextBox nameTxt;
         private CheckBox checkBox1;
-        private Button button2;
-        private Button button1;
+        private Button clearBtn;
+        private Button loginBtn;
         private TextBox pwTxt;
     }
 }

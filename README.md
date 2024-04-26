@@ -1,0 +1,1 @@
+C#/.NET inventory management system with WinForms, targeting .NET 6.0 for Windows. Implemented inventory tracking, management features, and used Microsoft.SqlServer.DacFx for database functionalities.
